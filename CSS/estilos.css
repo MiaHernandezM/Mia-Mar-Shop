@@ -1,0 +1,182 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+
+:root{
+    --padding-container: 100px, 0;
+    --color-title: #F8F7FB;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-width: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+   
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #83aed88c 0%,#0000008c 100%), url('../imagenes/fondocompleto2.png');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 93% 88%, 07% 88%);
+    z-index: -1;
+    color:#F8F7FB;
+
+}
+
+.nav {
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_title{
+    font-weight: 600;
+    color: white;
+
+  
+}
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+
+}
+
+.nav_items{
+    list-style: none;
+}
+
+.nav_links{
+    color: #F8F7FB;
+    text-decoration: none;
+
+}
+
+.nav_menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav_img{
+    display: block;
+    width: 30px;
+
+}
+
+
+.hero_container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+    
+
+}
+
+.hero_title{
+    font-size: 3rem;
+    color: white;
+  
+}
+.hero_paragrafo{
+    margin-bottom: 20px;
+    color: wheat;
+    font-size: large;
+}
+
+.nav_compras{
+    display: inline-block;
+    font-size: larger;
+    background-color: lightpink;
+    justify-self: center;
+    text-decoration: none;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 32px;
+
+}
+
+.origin{
+    text-align: center;
+}
+
+.subtitle{
+    color: darkblue;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.origin_paragrafo{
+    line-height: 1.7;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.origin_main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    
+}
+
+.origin_iconos{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+}
+.origin::icon{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    
+}
+
+.origin_title{
+    color: purple;
+    font-size: 1.5rem;
+}
+
+.origin_sede{
+    list-style: none;
+    font-size: 1.2rem;
+}
