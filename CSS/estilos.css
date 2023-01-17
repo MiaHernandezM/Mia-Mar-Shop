@@ -180,3 +180,45 @@ body {
     list-style: none;
     font-size: 1.2rem;
 }
+
+.collage-grid {
+    display: grid;
+    grid-template-columns: 6fr 4fr ;
+    grid-column-end:initial;
+    background-image: radial-gradient(circle at 50% -20.71%, #b4e1d6 0, #b2e1da 6.25%, #b0e1de 12.5%, #afe1e2 18.75%, #afe1e6 25%, #afe0e9 31.25%, #b0e0ed 37.5%, #b2dff0 43.75%, #b5def2 50%, #b8ddf4 56.25%, #bcdcf6 62.5%, #c0dbf7 68.75%, #c5d9f7 75%, #cad8f7 81.25%, #cfd7f6 87.5%, #d4d5f5 93.75%, #d9d4f4 100%);
+    border-radius: 2rem;
+    align-items: center;
+    margin-bottom: 15px;
+    
+    
+}
+
+.titulo-collage{
+    text-align:center;
+    line-height: 1.7;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 12px;
+    
+}
+
+.parragrafo-collage {
+    text-align: end;
+    line-height: 1.7;
+    color: black;
+}
+
+.icon_image{
+    width: 100%;
+    border-radius: 2rem;
+    display: block;
+    object-fit:fill;  
+    image-orientation:flip; 
+}
+.icon_image::hover{
+    contain: "";
+    position: absolute;
+    background-image: url("../imagenes/collage3.jpg");
+
+
+}
