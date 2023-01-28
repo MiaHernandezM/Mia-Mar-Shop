@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+
+:root {
+  --padding-container: 100px, 0;
+  --color-title: #f8f7fb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+}
+.hiro {
+  width: 100%;
+  height: 50vh;
+  min-width: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
+.hiro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #83aed88c 0%, #0000008c 100%),
+    url("../imagenes/fondoaccesorios3.jpg");
+  background-size:contain;
+  z-index: -1;
+  color: #f8f7fb;
+}
+.nave {
+  --padding-container: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nave_title {
+  font-weight: 600;
+  color: white;
+}
+.nave_link {
+  margin-left: auto;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 2em;
+}
+
+.nave_items {
+  list-style: none;
+}
+
+.nave_links {
+  color: white;
+  text-decoration: solid;
+  font-size: 15px;
+}
+.nave_links:hover {
+  background-color: rgb(158, 192, 226);
+  color: black;
+}
+.nave_menu {
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+
+.nave_img {
+  display: block;
+  width: 30px;
+}
+.hiro_container {
+  max-width: 800px;
+  --padding-container: 0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 1em;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.hiro_title {
+  font-size: 3rem;
+  color: white;
+}
+
+.nave_compras {
+  display: inline-block;
+  font-size: larger;
+  background-color: lightpink;
+  justify-self: center;
+  text-decoration: none;
+  color: white;
+  padding: 13px 30px;
+  border-radius: 32px;
+}
+
+
+.container-paragrafo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.Paragrafo-accesorios{
+    color: lightseagreen;
+    border-radius: 100px;
+    background-image: radial-gradient(circle at 50% -20.71%, #a4d8ec 0, #a7d7ef 6.25%, #abd6f1 12.5%, #b0d5f3 18.75%, #b5d3f4 25%, #bbd2f4 31.25%, #c1d0f4 37.5%, #c7cff3 43.75%, #cdcdf2 50%, #d3cbf0 56.25%, #d9caed 62.5%, #dec8ea 68.75%, #e3c7e7 75%, #e8c6e3 81.25%, #ecc5df 87.5%, #efc4da 93.75%, #f2c4d6 100%);
+    background-image: radial-gradient(circle at 50% -20.71%, #ffffed 0, #ffffde 25%, #f2e6cd 50%, #cfc8bd 75%, #adadae 100%);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    text-shadow: blueviolet;
+    transform-style: flat;
+
+}
+.Paragrafo-accesorios:hover{
+    color: lightsalmon;
+    background-image: radial-gradient(circle at 50% -20.71%, #a4d8ec 0, #a7d7ef 6.25%, #abd6f1 12.5%, #b0d5f3 18.75%, #b5d3f4 25%, #bbd2f4 31.25%, #c1d0f4 37.5%, #c7cff3 43.75%, #cdcdf2 50%, #d3cbf0 56.25%, #d9caed 62.5%, #dec8ea 68.75%, #e3c7e7 75%, #e8c6e3 81.25%, #ecc5df 87.5%, #efc4da 93.75%, #f2c4d6 100%);
+    transition-property: all;
+    letter-spacing: 10px;
+
+
+}
+.p-accesorio{
+    text-align: center;
+    padding: 20px;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+    object-fit: cover;
+}
+
+.imagen-galeria{
+    width: 100%;
+    height: 100%;
+
+}
+
+.item{
+    border-radius: 10px;
+
+}
+.item figure{
+    overflow: hidden;
+
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgb(0,0, 0, 0.20);
+    transform: scale(1.05);
+    
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0 ;
+    transition: all .5s;
+
+}
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-producto button{
+    border-radius: none;
+    background:none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    margin: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}

@@ -37,7 +37,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #83aed88c 0%,#0000008c 100%), url('../imagenes/fondocompleto2.png');
+    background-image: linear-gradient(180deg, #83aed88c 0%,#0000008c 100%), url('../imagenes/fondocompleto.png');
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 93% 88%, 07% 88%);
     z-index: -1;
@@ -75,7 +75,13 @@ body {
 
 .nav_links{
     color: purple;
-    text-decoration: none;
+    text-decoration:solid;
+    font-size: 15px;
+
+}
+.nav_links:hover{
+    background-color:rgb(158, 192, 226);
+    color: white;
 
 }
 
@@ -292,5 +298,6 @@ body {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         padding: 35px 0px;
-    }
+    }    
+   
 }
