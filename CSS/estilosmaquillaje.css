@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap");
+
+:root {
+  --padding-container: 100px, 0;
+  --color-title: #f8f7fb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+  }
+  .hiro {
+    width: 100%;
+    height: 50vh;
+    min-width: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+  }
+  
+  .hiro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #83aed88c 0%, #0000008c 100%),
+      url("../imagenes/fondomaquillaje.jpg");
+    background-size:contain;
+    z-index: -1;
+    color: #f8f7fb;
+  }
+  .nave {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nave_title {
+    font-weight: 600;
+    color: white;
+  }
+  .nave_link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+  }
+  
+  .nave_items {
+    list-style: none;
+  }
+  
+  .nave_links {
+    color: white;
+    text-decoration: solid;
+    font-size: 20px;
+  }
+  .nave_links:hover {
+    background-color: rgb(226, 158, 164);
+    color: black;
+  }
+  .nave_menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nave_img {
+    display: block;
+    width: 30px;
+  }
+  .hiro_container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  
+  .hiro_title {
+    font-size: 3rem;
+    color: white;
+    
+  }
+  
+  .nave_compras {
+    display: inline-block;
+    font-size: larger;
+    background-color: lightpink;
+    justify-self: center;
+    text-decoration: none;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 32px;
+  }
+  
+
+  .nave-carrito{
+    font-size: 12px;
+  }
+  .nave-carrito:hover{
+    background-color: rgb(226, 158, 164);
+  }
+  
+  .container-iconos{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 80px;
+    padding-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .iconos-belleza:hover{
+    box-shadow: 0 10px 20px rgba(2, 64, 66, 0.2);
+    transform: scale(1.05);
+    background-color: rgb(196, 218, 240);
+  }
+
+.iconos-belleza{
+    width: 100%;
+}
+
+.descripcion-icon{
+    text-align: center;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.imagen-galeria{
+    width: 100%;
+    height: 50%;
+
+}
+
+.item{
+    border-radius: 10px;
+
+}
+.item figure{
+    overflow: hidden;
+
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgb(0,0, 0, 0.20);
+    transform: scale(1.05);
+    
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0 ;
+    transition: all .5s;
+
+}
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-producto button{
+    border-radius: none;
+    background:none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    margin: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: white;
+    
+  }
+  
+  .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+  }
+  
+  .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .grupo-1 .box figure img{
+    width: 250px;
+  }
+  
+  .grupo-1 .box h2{
+    color:purple;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  
+  .grupo-1 .box p{
+    color: black;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .grupo-1 .email{
+    text-align:left;
+    text-decoration: none;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+  }
+  
+  .grupo-1 .email:hover{
+    text-decoration:underline;
+    color:fuchsia;
+  }
+  
+  .grupo-2{
+    background-color: azure;
+    padding: 15px 10px;
+    text-align: center ;
+    color: purple;
+  }
+  
+  .grupo-2 .small{
+    font-size: 15px ;
+  }
+  
+  @media screen and (max-width:800px ){
+    .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px;
+    }    
+   
+  }
